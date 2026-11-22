@@ -1,0 +1,29 @@
+{
+  "name": "haven-bay",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "The Haven Bay — Classic 2000s Pirate Bay-inspired universal uploader, Filecoin Synapse seeder, and Arkiv OP L3 tracker for the Haven L7 ecosystem.",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 5176",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 5176"
+  },
+  "dependencies": {
+    "@arkiv-network/sdk": "1.0.1",
+    "@filoz/synapse-core": "0.11.0",
+    "@filoz/synapse-sdk": "2.0.2",
+    "@icp-sdk/core": "6.1.1",
+    "@icp-sdk/vetkeys": "0.7.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "viem": "^2.40.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^4.5.0",
+    "typescript": "^5.8.3",
+    "vite": "^7.3.0"
+  }
+}

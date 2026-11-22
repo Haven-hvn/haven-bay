@@ -1,0 +1,375 @@
+/* The Haven Bay — Classic 2000s Pirate Bay Parchment & Tracker Stylesheet */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  background: #ffffff;
+  color: #111111;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.bay-app {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+}
+
+.bay-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 8px 14px;
+  background: linear-gradient(180deg, #f6f1ee 0%, #eadfd6 100%);
+  border-bottom: 2px solid #8b5a2b;
+}
+
+.bay-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.bay-brand h1 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 20px;
+  color: #3d240f;
+  line-height: 1.1;
+}
+
+.bay-tagline {
+  font-size: 10px;
+  color: #6b4b2e;
+}
+
+.bay-nav {
+  display: flex;
+  gap: 4px;
+  margin-left: 8px;
+}
+
+.bay-nav button {
+  background: #f3eae2;
+  border: 1px solid #b89b82;
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #000099;
+  cursor: pointer;
+}
+
+.bay-nav button:hover {
+  background: #e8d8ca;
+  text-decoration: underline;
+}
+
+.bay-nav button.active {
+  background: #8b5a2b;
+  color: #ffffff;
+  border-color: #5c3a1e;
+}
+
+.bay-status {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.bay-pill {
+  padding: 2px 7px;
+  font-size: 10px;
+  font-weight: 700;
+  background: #fff;
+  border: 1px solid #b89b82;
+  color: #4a321d;
+}
+
+.bay-pill.ok {
+  background: #e1f5e6;
+  border-color: #2d8647;
+  color: #155c2b;
+}
+
+.bay-btn {
+  padding: 4px 10px;
+  background: #f0e6dc;
+  border: 1px solid #8b5a2b;
+  color: #2a1808;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.bay-btn:hover:not(:disabled) {
+  background: #e2d0be;
+}
+
+.bay-btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.bay-btn-primary {
+  background: #8b5a2b;
+  color: #ffffff;
+  border-color: #5c3a1e;
+}
+
+.bay-btn-primary:hover:not(:disabled) {
+  background: #6e451f;
+}
+
+.bay-btn-xs {
+  padding: 2px 6px;
+  font-size: 10px;
+}
+
+.bay-main {
+  flex: 1;
+  padding: 12px 16px;
+  overflow: auto;
+}
+
+.bay-searchbar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.bay-search-input {
+  flex: 1;
+  padding: 5px 8px;
+  border: 1px solid #8b5a2b;
+  font-family: inherit;
+  font-size: 12px;
+}
+
+.bay-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 6px 10px;
+  background: #f6f1ee;
+  border: 1px solid #d2b9a6;
+  margin-bottom: 10px;
+}
+
+.bay-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.bay-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #d2b9a6;
+}
+
+.bay-table thead th {
+  text-align: left;
+  padding: 6px 8px;
+  background: #d2b9a6;
+  color: #2b1808;
+  border-right: 1px solid #f6f1ee;
+  font-size: 11px;
+}
+
+.bay-table tbody tr {
+  background: #f6f1ee;
+  border-bottom: 1px solid #ffffff;
+}
+
+.bay-table tbody tr:nth-child(even) {
+  background: #fbf8f6;
+}
+
+.bay-table tbody tr:hover {
+  background: #efe5dc;
+}
+
+.bay-table tbody td {
+  padding: 6px 8px;
+  vertical-align: middle;
+}
+
+.bay-cat {
+  color: #5c3a1e;
+  font-size: 10px;
+}
+
+.bay-grp {
+  color: #777;
+  font-size: 9.5px;
+}
+
+.bay-title-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.bay-title {
+  font-weight: 700;
+  color: #000099;
+  font-size: 12px;
+}
+
+.bay-skull {
+  padding: 1px 5px;
+  font-size: 9.5px;
+  font-weight: 700;
+  background: #d4f2db;
+  color: #0f5c26;
+  border: 1px solid #59a86e;
+}
+
+.bay-meta {
+  font-size: 10px;
+  color: #555;
+  margin-top: 2px;
+}
+
+.bay-mono {
+  font-family: 'Lucida Console', Consolas, monospace;
+  font-size: 10.5px;
+}
+
+.bay-num {
+  text-align: right;
+  font-family: 'Lucida Console', Consolas, monospace;
+}
+
+.bay-tag {
+  display: inline-block;
+  padding: 1px 6px;
+  font-size: 10px;
+  border: 1px solid #c5b3a3;
+  background: #fff;
+}
+
+.bay-tag.pub {
+  background: #eef4fb;
+  border-color: #9eb6d4;
+  color: #1f487a;
+}
+
+.bay-tag.ok {
+  background: #dff5e4;
+  border-color: #4f9e64;
+  color: #125c28;
+  font-weight: 700;
+}
+
+.bay-actions {
+  display: flex;
+  gap: 4px;
+}
+
+.bay-empty {
+  text-align: center;
+  padding: 24px !important;
+  color: #666;
+}
+
+.bay-panel {
+  max-width: 820px;
+  background: #f6f1ee;
+  border: 1px solid #d2b9a6;
+  padding: 14px 16px;
+}
+
+.bay-panel h2 {
+  font-family: Georgia, serif;
+  font-size: 16px;
+  color: #3d240f;
+  margin-bottom: 6px;
+}
+
+.bay-sub {
+  color: #4a3a2c;
+  margin-bottom: 12px;
+}
+
+.bay-form {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 8px 10px;
+  align-items: center;
+}
+
+.bay-form input[type='text'],
+.bay-form input:not([type]),
+.bay-form select,
+.bay-form textarea {
+  padding: 4px 6px;
+  border: 1px solid #8b5a2b;
+  background: #fff;
+  font-family: inherit;
+  font-size: 11px;
+}
+
+.bay-step-row {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.bay-alert {
+  margin-top: 10px;
+  padding: 6px 10px;
+  background: #fff3cd;
+  border: 1px solid #c9a236;
+  color: #594100;
+}
+
+.bay-alert.info {
+  background: #e7f1ff;
+  border-color: #6b9cd4;
+  color: #123c6e;
+}
+
+.bay-alert.ok {
+  background: #dff5e4;
+  border-color: #3c9152;
+  color: #0e4f20;
+  font-weight: 700;
+}
+
+.bay-pre {
+  margin-top: 10px;
+  padding: 8px;
+  background: #1a1614;
+  color: #e6dfd5;
+  font-family: 'Lucida Console', Consolas, monospace;
+  font-size: 10.5px;
+  max-height: 220px;
+  overflow: auto;
+}
+
+.bay-toast {
+  position: fixed;
+  bottom: 14px;
+  right: 14px;
+  padding: 7px 12px;
+  background: #3d240f;
+  color: #fff;
+  border: 1px solid #8b5a2b;
+  font-weight: 700;
+  z-index: 99;
+}
