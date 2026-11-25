@@ -22,7 +22,7 @@ export const DEFAULT_BAY_CONFIG: BayConfig = {
   arkivRpcUrl: 'https://rpc.rabdi.db-chain.testnet.arkiv.network',
   arkivAccessKey: '',
   ipfsGateway: 'https://ipfs.io/ipfs/',
-  aolCanisterId: 'gny6k-fqaaa-aaaab-ag3ra-cai',
+  aolCanisterId: '3gzy3-kaaaa-aaaan-q6y6q-cai',
   icpHost: 'https://icp-api.io',
 };
 
