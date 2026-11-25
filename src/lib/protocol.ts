@@ -20,7 +20,7 @@ export interface BayConfig {
 export const DEFAULT_BAY_CONFIG: BayConfig = {
   arkivPreset: 'rabdi',
   arkivRpcUrl: 'https://rpc.rabdi.db-chain.testnet.arkiv.network',
-  arkivAccessKey: '',
+  arkivAccessKey: (import.meta.env.VITE_ARKIV_API_KEY as string | undefined) ?? '',
   ipfsGateway: 'https://ipfs.io/ipfs/',
   aolCanisterId: '3gzy3-kaaaa-aaaan-q6y6q-cai',
   icpHost: 'https://icp-api.io',
